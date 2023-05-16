@@ -1,0 +1,20 @@
+<form method='post'>
+  {% csrf_token %}
+  <div>
+    <label>Nome</label>
+    <input type='text' name='nome' value="{{mortes.nome}}"/>
+  </div>
+  <div>
+    <label>Data</label>
+    <input type='date' name='data' value="{{mortes.data}}"/>
+  </div>
+  <div>
+    <label>Personagem</label>
+    <textarea name ='personagem'/>{{mortes.personagem}}</textarea>
+  </div>
+  <div>
+    <label>Motivo da Morte</label>
+    <textarea name ='motivoMorte'/>{{mortes.motivoMorte}}</textarea>
+  </div>
+  <input type='submit'/>
+</form>

@@ -1,0 +1,111 @@
+{% load static %}
+<html>
+
+<head>
+ <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+  
+  <title>Gabriel Pereira da Silva Araujo</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+
+
+
+<body>
+
+  <h1>Netflix</h1>
+  <h2>LA CASA DE PAPEL</h2>
+
+  <p class="paragrafo-sinopse"> <b>
+      Oito ladrões se trancam com reféns na Casa da Moeda da Espanha. Seu líder manipula a polícia para realizar um
+      plano. <br>Será o maior roubo da história, ou uma missão em vão? </b>
+  </p>
+
+  <h2>Melhores Atores</h2>
+  <ul>
+    {% for melhores in Melhores%}
+      <li>
+        {{ melhores.ator }}
+        <a href="/melhores/edit/{{melhores.id}}"> Editar</a> 
+        <a href="/melhores/delete/{{melhores.id}}"> Remover</a> 
+      </li>
+      
+    {% endfor %}
+  </ul>
+
+  <table border="2">
+    <tr>
+      <td>Personagem</td>
+      <td>Nome</td>
+      <td>Idade</td>
+    </tr>
+    <tr>
+      <td>Tóquio</td>
+      <td>Úrsula Corberó</td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <td>Berlim</td>
+      <td>Pedro Alonso</td>
+      <td>51</td>
+    </tr>
+    <tr>
+      <td>Professor</td>
+      <td>Álvaro Morte</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <td>Rio</td>
+      <td>Miguel Herrán</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <td>Denver</td>
+      <td>Jaime Lorente</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td>Helsinki</td>
+      <td>Darko Peric</td>
+      <td>45</td>
+    </tr>
+    <tr>
+      <td>Raquel</td>
+      <td>Itziar Ituno</td>
+      <td>48</td>
+    </tr>
+  </table>
+
+  <h3>ATENÇÃO SPOILER</h3>
+  
+  <h2>Mortes dos Personagens </h2>
+  <ol>
+    {% for mortes in Mortes%}
+      <li>
+        {{ mortes.nome }}
+        <a href="/mortes/edit/{{mortes.id}}"> Editar</a> 
+        <a href="/mortes/delete/{{mortes.id}}"> Remover</a></li>
+    {% endfor %}
+  </ol>
+    
+  <div>
+    <button>
+      <a href="https://www.netflix.com/br/title/80192098" target="_blank">ASSISTA AGORA</a><br>
+    </button>
+    <br><br>
+    <img width="500px"
+      src="https://static1.purebreak.com.br/series/9/55/05/79/@/338743--la-casa-de-papel-opengraph_1200-1.gif">
+  </div>
+
+</body>
+
+</html>

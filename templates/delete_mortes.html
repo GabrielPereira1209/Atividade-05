@@ -1,0 +1,6 @@
+<form method="POST">
+  {% csrf_token %}
+  Remover a morte com id={{mortes.id}}
+  <input type="submit" name="confirm" value="Sim">
+  <input type="submit" value="Não">
+</form>

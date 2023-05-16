@@ -1,0 +1,16 @@
+<form method='post'>
+  {% csrf_token %} 
+  <div>
+    <label>Nome</label>
+    <input type='text' name='ator' value="{{melhores.ator}}" />
+  </div>
+  <div>
+    <label>Temporada</label>
+    <input type='date' name='temporada' value="{{melhores.temporada}}" />
+  </div>
+  <div>
+    <label>Personagem</label>
+    <textarea name ='personagem'/>{{melhores.personagem}}</textarea>
+  </div>
+  <input type='submit'/>
+</form>

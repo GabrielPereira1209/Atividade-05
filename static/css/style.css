@@ -1,0 +1,44 @@
+h1 {
+  font-family: 'Climate Crisis';
+  text-align: center;
+  color: #ff0000;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+}
+
+h2 {
+  font-family: 'Lobster';
+  text-align: center;
+  color: #000000;
+}
+
+h3 {
+  font-family: 'Lilita One';
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ff0000;
+  text-align: center;
+  color: #000000;
+  font-size: 30px;
+}
+
+body {background-image: url('https://img.freepik.com/fotos-gratis/cima-de-branca-marmore-textured-fundo_53876-63502.jpg');}
+
+div {text-align: center;}
+
+img{
+ border: 6px solid  red;
+}
+
+.paragrafo-sinopse{
+  text-align: center;
+}
+
+h4 {
+   text-align: left;
+  color: #ff0000;
+  font-size: 20px;
+}
+
+table {
+    border: 5px solid #e40707; /* cor verde usando o nome da cor */
+  }

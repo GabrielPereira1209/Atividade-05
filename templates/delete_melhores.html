@@ -1,0 +1,6 @@
+<form method="POST">
+  {% csrf_token %}
+  Remover ator com id= {{melhores.id}}
+  <input type="submit" name="confirm" value="Sim">
+  <input type="submit" value="Não">
+</form>
